@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AppMaterialModule } from './app-material.module;
+import { AngularMaterialModule } from './AngularMaterialModule';
+import { CreatePostComponent } from './pages/create-post/create-post.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,7 @@ import { AppMaterialModule } from './app-material.module;
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    AppMaterialModule
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
